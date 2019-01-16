@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <style>
+        #loading {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            z-index: 9999;
+            background: #fff url('img/pre.gif') center no-repeat;
+            overflow-x:hidden;
+        }
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .bg {
+            background-image: linear-gradient( rgba(218, 0, 151, 0.45), rgb(93, 192, 236)),url(img/b.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+          margin-bottom:30px;
+        }
+
+        .banner {
+            padding-top: 15px;
+            margin-top: 16%;
+            height: 400px;
+            background-color: #d8c3c3;
+            opacity: 0.6;
+            border-radius:10px;
+        }
+        .shop {
+            position: relative;
+            width: 100px;
+            top: 40%;
+            left: 40%;
+            width: 242px;
+            height: 70px;
+            font-size:20px;
+            font-weight:bold;
+        }
+        .nav {
+           background-color: #9649bd;
+           height:80px;
+        }
+        .nav-link:hover{
+       border-bottom:3px solid yellow;
+        }
+        
+    </style>
+    
+</head>
+<body >
+    <div id="loading">
+        <h3 class="text-center" style="margin-top:500px;color:aqua">Loading.....</h3>
+
+    </div>
+    <div class="container-fluid  fixed-top nav">
+
+        <nav class="navbar navbar-expand-md  navbar-dark ">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#"><i class="fa fa-shopping-cart" style="font-size:24px;"> </i> Homeal</a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">cheap Holiday</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">All inclusive</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+
+
+    <div class="container-fluid bg">
+
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8 banner">
+                <h1 class="text-center" style="font-weight:bold;font-family: 'Poppins', sans-serif;
+    font-size: 4.5rem;">
+                    Autumn Is Coming
+                </h1>
+                <h2 class="text-center text-white" style="font-size:70px;font-family: 'Bradley Hand ITC', sans-serif;">New arrivals <span style="color:#0093cc;">Outerwear</span></h2>
+                <p class="text-center" style="font-size:30px;">Save over 25% on the purchase of new collection.</p>
+                <button class="btn btn-outline-danger shop">Shop now</button>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+
+    </div>
+    <!--side bar and product-->
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10" style="box-shadow:0px 0px 4px 3px white;    background-color: rgb(255, 255, 255);
+
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px;height:50px;border-bottom:2px solid red;">
+                <button class="btn btn-primary" style="float:right">View all</button>
+                <h4 style="padding:10px;">Fashion for Travel Lovers</h4>
+           
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+   
+   
+   
+   
+   
+    <script type="text/javascript">
+        
+            jQuery(document).ready(function() {
+                jQuery('#loading').fadeOut(5000);
+            });
+ 
+    </script>
+</body>
+</html>
